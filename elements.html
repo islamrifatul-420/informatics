@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Rifat – Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+      /* Scroll to Top Button */
+      #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #1e90ff;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Scroll-to-top button (JS function controls this) -->
+    <div id="topBtn" onclick="scrollToTop()">Back to Top</div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Rifat’s Cycling Hub</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gear.html">Gear</a></li>
+          <li class="active"><a href="guide.html">Cycling Guide</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="#" class="icon brands fa-instagram"></a></li>
+          <li><a href="#" class="icon brands fa-youtube"></a></li>
+          <li><a href="#" class="icon brands fa-facebook-f"></a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+
+        <section class="post">
+          <header class="major">
+            <h1>Cycling Guide</h1>
+            <p>Your simple guide to riding better and staying safe.</p>
+          </header>
+
+          <h2>Why Cycling?</h2>
+          <p>
+            Cycling gives you freedom. It keeps things simple. You can start anytime.
+          </p>
+
+          <hr/>
+
+          <h2>Choosing the Right Bike</h2>
+          <ul>
+            <li><strong>Road Bike</strong> – Fast and light.</li>
+            <li><strong>Mountain Bike</strong> – Strong and trail-ready.</li>
+            <li><strong>Hybrid</strong> – Everyday comfort.</li>
+          </ul>
+
+          <hr/>
+
+          <h2>Essential Gear</h2>
+          <ul>
+            <li>Helmet</li>
+            <li>Lights</li>
+            <li>Water bottle</li>
+            <li>Gloves</li>
+            <li>Repair kit</li>
+          </ul>
+
+          <hr/>
+
+          <h2>Gallery</h2>
+
+          <span class="image fit">
+            <img src="images/roadbike.jpg" alt="" />
+          </span>
+
+          <div class="box alt">
+            <div class="row gtr-50 gtr-uniform">
+              <div class="col-4">
+                <span class="image fit"><img src="images/mountainbike.jpg" alt=""></span>
+              </div>
+              <div class="col-4">
+                <span class="image fit"><img src="images/481666180_1173594074398466_6136794513251836390_n.jpg" alt=""></span>
+              </div>
+              <div class="col-4">
+                <span class="image fit"><img src="images/481092396_1173594044398469_2168722647778834127_n.jpg" alt=""></span>
+              </div>
+            </div>
+          </div>
+
+          <hr/>
+
+          <h2>Join Our Weekly Rides</h2>
+          <form method="post" action="#">
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall">
+                <input type="text" name="name" placeholder="Your Name" />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <input type="email" name="email" placeholder="Email Address" />
+              </div>
+              <div class="col-12">
+                <textarea name="message" placeholder="Tell us about your riding experience" rows="5"></textarea>
+              </div>
+              <div class="col-12">
+                <ul class="actions">
+                  <li><input type="submit" value="Join Ride" class="primary" /></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Location</h3>
+            <p>Tokyo, Japan</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p>info@cycleworks.jp</p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li><a href="#" class="icon brands alt fa-instagram"></a></li>
+              <li><a href="#" class="icon brands alt fa-facebook-f"></a></li>
+              <li><a href="#" class="icon brands alt fa-youtube"></a></li>
+            </ul>
+          </section>
+        </section>
+
+        <div style="text-align:center; margin-top:20px; font-weight:bold;">
+          Student: Islam Md Rifatul<br>
+          Student ID: 25224530
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- ✔ YOUR NEW JAVASCRIPT FUNCTION (VISIBLE AND SIMPLE) -->
+    <script>
+      // Shows the button when user scrolls down
+      window.onscroll = function() {
+        const btn = document.getElementById("topBtn");
+        if (window.scrollY > 200) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+
+      // Scroll-to-top function
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+  </body>
+</html>
